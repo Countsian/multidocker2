@@ -17,7 +17,7 @@ before_install:
 
     # log in to docker cli
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     # take thos eimages and get them pushed to docker hub now
     - docker push scottfj/multi-client
     - docker push scottfj/multi-nginx
